@@ -1,0 +1,13 @@
+<div class="console">
+    <div>Score</div>
+    <div *ngIf="players">
+        <div class="playerScore">
+            {{players.firstPlayer}}: {{score[0]}}
+        </div>
+        <div class="playerScore">
+            {{players.secondPlayer}}: {{score[1]}}
+        </div>
+
+
+    </div>
+</div>

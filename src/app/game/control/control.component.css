@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+.clearfix{
+    clear: both;
+}
+.playground{
+    background-color:   slateblue;
+    padding: 20px;
+    width: 800px;
+    /* height: 500px    ; */
+    display: flex;
+    
+}
+.land{
+    width: 450px;
+    height: 450px;
+    background-color: darkslateblue;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+.cell-block{
+    width: 33.3333%;
+    height: 33.3333%;z-index: 1;
+    /* padding: 5px; */
+}
+.redLine{
+    width: 430px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    display: none;
+    margin-top: 220px;
+    /* margin-top: -10px; */
+    z-index: 3;
+    /* margin-bottom: 250px ; */
+}
+.rotated{
+    transform: rotate(90deg);
+}
+.halfrotated{
+    transform: rotate(45deg);
+    /* margin-top: -10px ; */
+    width: 480px;
+    margin-top: 230px;
+
+}
+.overRotated{
+    transform: rotate(135deg);
+    /* margin-top: -10px ; */
+    width: 480px;
+}
+.display{
+    display: block;
+
+}
+.left
+{
+    margin-left: -160px ;
+}
+.right
+{
+    margin-left: 160px ;
+}
+.top
+{
+    margin-top: 70px ;
+}
+.bottom
+{
+    margin-top: 370px ;
+}
+.purpleLine{
+    width: 470px;
+    height: 5px;
+    margin:0 -10px;
+    margin-top: 150px; 
+    float: right;
+    background-color: purple;
+    
+}
+.purpleLineRotate{
+    
+    width: 5px;
+    height: 470px;
+    margin:-10px 0;
+   margin-left: 150px;
+    float: left;
+    background-color: purple;
+}
+.absoluteblock{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+

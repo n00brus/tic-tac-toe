@@ -1,0 +1,30 @@
+<!-- <app-registerwindow (player)="register($event)"></app-registerwindow> -->
+<app-modal-winner *ngIf="showModal_winner" (reset)="reset($event)" [winner]="winner"></app-modal-winner>
+<app-modal-draw *ngIf="showModal_draw" (reset)="reset($event)"></app-modal-draw>
+<div class="playground">
+
+    <div class="land" [ngStyle]="{}">
+        <div class="absoluteblock">
+            <div class="purpleLineRotate"></div>
+            <div class="purpleLineRotate"></div>
+        </div>
+        <div class="absoluteblock">
+
+            <div class="purpleLine"></div>
+            <div class="purpleLine"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="redLine" [ngClass]="redLinePosition">
+        </div>
+        <div *ngFor="let cell of cells" class="cell-block">
+
+            <app-cell [cell]="cell" (toggleCell)="toggleCell($event)">
+
+            </app-cell>
+        </div>
+
+
+    </div>
+    <app-console-menu [score]="score" [players]="players"></app-console-menu>
+
+</div>

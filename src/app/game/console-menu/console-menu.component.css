@@ -1,0 +1,12 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.console{
+    margin-left: 50px   ;
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;;
+}
+.playerScore{
+    padding: 10px 0;
+}

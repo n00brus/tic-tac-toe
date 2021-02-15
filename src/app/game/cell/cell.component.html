@@ -1,0 +1,5 @@
+<div class="cell" (click)="move($event,cell)">
+
+    <div *ngIf="cell.moveType=='cross'" class="cell__badge">X</div>
+    <div *ngIf="cell.moveType=='zero'" class="cell__badge">O</div>
+</div>

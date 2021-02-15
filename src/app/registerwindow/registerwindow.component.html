@@ -1,0 +1,14 @@
+<div class="registerWindow">
+    <form (submit)="register($event)" [formGroup]="profileForm">
+        <div class="modal-body">
+
+            <div class="modal-body__header">Enter name for players</div>
+            Player 1
+            <input class="modal__input" formControlName="firstPlayer">
+            Player 2
+            <input class="modal__input" formControlName="secondPlayer">
+            <button type="submit">submit</button>
+
+        </div>
+    </form>
+</div>
